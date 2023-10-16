@@ -130,7 +130,50 @@ def path_2(username):
 
 def path_3(username):
     print(f"{username}, you choose to check the dark alley on the right.")
-    # Add path-specific story and puzzles here.
+    print("You find yourself in a dimly lit alley filled with mysterious symbols and puzzles.")
+    
+    # Puzzle 1: Logic Puzzle 1
+    print("Puzzle 1: The day before two days after the day before tomorrow is Saturday.")
+    print("What day is it today?")
+    
+    while True:
+        day_guess = input("Enter your answer (e.g., Monday, Tuesday, etc.): ").strip().capitalize()
+        
+        if day_guess == "Friday":
+            print("Correct! You've solved the first logic puzzle.")
+            break
+        else:
+            print("That's not the correct answer. Try again.")
+
+    # Puzzle 2: Logic Puzzle 2
+    print("Puzzle 2: Five people were eating apples, A finished before B, but behind C.")
+    print("D finished before E, but behind B. What was the finishing order?")
+    
+    while True:
+        order_guess = input("Enter the finishing order (e.g., CABDE): ").strip().upper()
+        
+        if order_guess == "CABDE":
+            print("Correct! You've solved the second logic puzzle.")
+            break
+        else:
+            print("That's not the correct answer. Try again.")
+
+    # Puzzle 3: Logic Puzzle 3
+    print("Puzzle 3: There are two ducks in front of a duck, two ducks behind a duck, and a duck in the middle.")
+    print("How many ducks are there?")
+    
+    while True:
+        duck_guess = input("Enter your answer (e.g., Three): ").strip().capitalize()
+        
+        if duck_guess == "Three":
+            print("Correct! You've solved the third logic puzzle.")
+            break
+        else:
+            print("That's not the correct answer. Try again.")
+
+    print("You've successfully solved all the logic puzzles in the dark alley. You may now proceed further.")
+    # Add more story elements or choices specific to this path.
+
 
 if __name__ == "__main__":
     main()
