@@ -56,18 +56,20 @@ def path_1(username):
             print("That's not the correct answer. Try again.")
 
     print("You've reached the final room. There's a combination lock on the exit door.")
-    print("To unlock it, guess the 4-digit combination (between 0000 and 9999).")
+    print("To unlock it, guess the 4-digit combination (between 0 and 9).")
     
-    correct_combination = str(random.randint(0, 9999)).zfill(4)
+    correct_number = str(random.randint(0, 9))
     
     while True:
-        guess = input("Enter your 4-digit guess: ")
+        guess = input("Enter your guess (0-9): ")
         
-        if guess == correct_combination:
+        if guess == correct_number:
             print(f"The door unlocks, and you escape the haunted house, {username}! Congratulations!")
             break
+        elif guess.isdigit() and 0 <= int(guess) <= 9:
+            print("That's not the correct number. Try again.")
         else:
-            print("That's not the correct combination. Try again.")
+            print("Invalid input. Please enter a number between 0 and 9.")
 
 def path_2(username):
     print(f"{username}, you decide to explore the garden on the left.")
