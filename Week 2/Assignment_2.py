@@ -73,7 +73,60 @@ def path_1(username):
 
 def path_2(username):
     print(f"{username}, you decide to explore the garden on the left.")
-    # Add path-specific story and puzzles here.
+    print("You find yourself in a garden filled with mysterious plants and statues.")
+    
+    # Puzzle 1: Input a prime number
+    print("Puzzle 1: Input a prime number.")
+    
+    while True:
+        prime_guess = input("Enter a prime number: ")
+        
+        if prime_guess.isdigit():
+            prime_guess = int(prime_guess)
+            if is_prime(prime_guess):
+                print("Correct! You've solved the first puzzle.")
+                break
+            else:
+                print("That's not a prime number. Try again.")
+        else:
+            print("Invalid input. Please enter a valid number.")
+
+    # Puzzle 2: Solve a simple math problem
+    print("Puzzle 2: Solve the math problem: A + 5 = 15.")
+    
+    while True:
+        math_guess = input("Enter the value of 'A': ")
+        
+        if math_guess.isdigit():
+            math_guess = int(math_guess)
+            if math_guess + 5 == 15:
+                print("Correct! You've solved the second puzzle.")
+                break
+            else:
+                print("That's not the correct answer. Try again.")
+        else:
+            print("Invalid input. Please enter a valid number.")
+
+    # Puzzle 3: Solve the math problem
+    print("Puzzle 3: You come across a mysterious inscription on a stone tablet:")
+    print("'If you take half of 30 and add 10, what do you get?'")
+    
+    while True:
+        math_guess = input("Enter your answer: ")
+        
+        if math_guess.isdigit():
+            math_guess = int(math_guess)
+            if math_guess == 25:
+                print("Correct! You've solved the third puzzle.")
+                break
+            else:
+                print("That's not the correct answer. Try again.")
+        else:
+            print("Invalid input. Please enter a valid number.")
+
+    print("You've completed all the puzzles in the garden. You may now proceed further.")
+    # Add more story elements or choices specific to this path.
+
 
 def path_3(username):
     print(f"{username}, you choose to check the dark alley on the right.")
