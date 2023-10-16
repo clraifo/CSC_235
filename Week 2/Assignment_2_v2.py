@@ -75,19 +75,19 @@ def path_2(username):
     print(f"{username}, you decide to explore the garden on the left.")
     print("You find yourself in a garden filled with mysterious plants and statues.")
     
-    # Puzzle 1: Input a prime number
-    print("Puzzle 1: Input a prime number.")
+    # Puzzle 1: Input a number divisible by 3
+    print("Puzzle 1: Enter a number divisible by 3.")
     
     while True:
-        prime_guess = input("Enter a prime number: ")
+        number_guess = input("Enter a number: ")
         
-        if prime_guess.isdigit():
-            prime_guess = int(prime_guess)
-            if is_prime(prime_guess):
+        if number_guess.isdigit():
+            number_guess = int(number_guess)
+            if number_guess % 3 == 0:
                 print("Correct! You've solved the first puzzle.")
                 break
             else:
-                print("That's not a prime number. Try again.")
+                print("That's not a number divisible by 3. Try again.")
         else:
             print("Invalid input. Please enter a valid number.")
 
@@ -126,6 +126,7 @@ def path_2(username):
 
     print("You've completed all the puzzles in the garden. You may now proceed further.")
     # Add more story elements or choices specific to this path.
+
 
 
 def path_3(username):
