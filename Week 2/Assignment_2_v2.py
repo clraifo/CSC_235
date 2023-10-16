@@ -56,7 +56,7 @@ def path_1(username):
             print("That's not the correct answer. Try again.")
 
     print("You've reached the final room. There's a combination lock on the exit door.")
-    print("To unlock it, guess the 4-digit combination (between 0 and 9).")
+    print("To unlock it, guess a number between 0 and 9).")
     
     correct_number = str(random.randint(0, 9))
     
