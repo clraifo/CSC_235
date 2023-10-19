@@ -1,11 +1,11 @@
 # In keeping with the season, I decided to make a Halloween-themed text adventure game.
 # The game is a simple, linear story with three paths to choose from.
 # Each path has a series of puzzles to solve before the player can proceed to the next challenge.
-# The game is written in Python 3.8.5 and uses the time and random modules.
-# The inspiration for this came to me as I was driving past a corn maze on the way home from work.
+# The game is written in Python 3.10.2 and uses the time and random modules.
+# The inspiration for this came to me as I was driving past a corn maze on my way home from work.
 # Seriously, I looked over from a stoplight and thought, "Hey, I could use that for my homework"
 # This is their website, for proper attribution: https://www.cornmaze.com/
-# I wrote all of the cheesy dialoguie myself, and I'm not ashamed to admit it
+# I wrote all of the cheesy dialogue myself, and I'm not ashamed to admit it
 # I got the logic puzzles in path_3 here: https://parade.com/970343/parade/logic-puzzles/
 
 
