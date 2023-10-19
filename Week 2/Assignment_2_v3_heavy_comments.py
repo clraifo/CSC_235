@@ -56,9 +56,9 @@ def path_1(username):                                                           
     print("Solve the riddle to proceed:")                                       # Prints the instructions
     time.sleep(global_delay)                                                    # Delays the next line of code by the global delay variable
     
-    while True:                                                                 # Loops until the user enters the correct answer
-        answer = input("What has keys but can't open locks? ").lower()          # Prompts the user for their answer
-        time.sleep(global_delay)                                                # Delays the next line of code by the global delay variable
+    while True:                                                                     # Loops until the user enters the correct answer
+        answer = input("What has keys but can't open locks (piano)? ").lower()      # Prompts the user for their answer
+        time.sleep(global_delay)                                                    # Delays the next line of code by the global delay variable
         
         if answer == "piano":                                                   # If the user enters the correct answer
             print("The door unlocks, and you proceed to the next challenge.")   # Print a success message
@@ -72,9 +72,9 @@ def path_1(username):                                                           
     print("To open the chest, solve the anagram: 'RATSUREE'.")                  # Prints the instructions
     time.sleep(global_delay)                                                    # Delays the next line of code by the global delay variable
     
-    while True:                                         # Loops until the user enters the correct answer
-        guess = input("Enter your guess: ").lower()     # Prompts the user for their answer
-        time.sleep(global_delay)                        # Delays the next line of code by the global delay variable
+    while True:                                                         # Loops until the user enters the correct answer
+        guess = input("Enter your guess (treasure): ").lower()          # Prompts the user for their answer
+        time.sleep(global_delay)                                        # Delays the next line of code by the global delay variable
         
         if guess == "treasure":                                                 # If the user enters the correct answer
             print("The chest opens, and you continue to the final challenge.")  # Print a success message
@@ -111,7 +111,7 @@ def path_2(username):                                                           
     time.sleep(global_delay)                                                # Delays the next line of code by the global delay variable
     
     while True:                                                             # Loops until the user enters a valid number
-        number_guess = input("Enter a number: ")                            # Prompts the user for their answer
+        number_guess = input("Enter a number (e.g. 3, 6, 9, etc): ")        # Prompts the user for their answer
         time.sleep(global_delay)                                            # Delays the next line of code by the global delay variable
         
         if number_guess.isdigit():                                          # If the user enters a valid number
@@ -131,7 +131,7 @@ def path_2(username):                                                           
     time.sleep(global_delay)                                                # Delays the next line of code by the global delay variable
     
     while True:                                                             # Loops until the user enters the correct answer
-        math_guess = input("Enter the value of 'A': ")                      # Prompts the user for their answer
+        math_guess = input("Enter the value of 'A' (10): ")                 # Prompts the user for their answer
         time.sleep(global_delay)                                            # Delays the next line of code by the global delay variable
         
         if math_guess.isdigit():                                            # If the user enters a valid number
@@ -153,7 +153,7 @@ def path_2(username):                                                           
     time.sleep(global_delay)                                                        # Delays the next line of code by the global delay variable
     
     while True:                                                     # Loops until the user enters the correct answer
-        math_guess = input("Enter your answer: ")                   # Prompts the user for their answer
+        math_guess = input("Enter your answer (25): ")              # Prompts the user for their answer
         time.sleep(global_delay)                                    # Delays the next line of code by the global delay variable
         
         if math_guess.isdigit():                                    # If the user enters a valid number
@@ -183,7 +183,7 @@ def path_3(username):                                                           
     time.sleep(global_delay)                                                                        # Delays the next line of code by the global delay variable
     
     while True:                                                                                     # Loops until the user enters the correct answer
-        day_guess = input("Enter your answer (e.g., Monday, Tuesday, etc.): ").strip().capitalize() # Prompts the user for their answer
+        day_guess = input("Enter your answer (friday): ").strip().capitalize()                      # Prompts the user for their answer
         time.sleep(global_delay)                                                                    # Delays the next line of code by the global delay variable
         
         if day_guess == "Friday":                                                                   # If the user enters the correct answer
@@ -200,7 +200,7 @@ def path_3(username):                                                           
     time.sleep(global_delay)                                                                        # Delays the next line of code by the global delay variable
     
     while True:                                                                                     # Loops until the user enters the correct answer
-        order_guess = input("Enter the finishing order (e.g., CABDE): ").strip().upper()            # Prompts the user for their answer
+        order_guess = input("Enter the finishing order (CABDE): ").strip().upper()                  # Prompts the user for their answer
         time.sleep(global_delay)                                                                    # Delays the next line of code by the global delay variable
         
         if order_guess == "CABDE":                                                                  # If the user enters the correct answer
@@ -218,7 +218,7 @@ def path_3(username):                                                           
     time.sleep(global_delay)                                                                                            # Delays the next line of code by the global delay variable
     
     while True:                                                                         # Loops until the user enters the correct answer
-        duck_guess = input("Enter your answer (e.g., Three): ").strip().capitalize()    # Prompts the user for their answer
+        duck_guess = input("Enter your answer (three): ").strip().capitalize()          # Prompts the user for their answer
         time.sleep(global_delay)                                                        # Delays the next line of code by the global delay variable
         
         if duck_guess == "Three":                                                       # If the user enters the correct answer
@@ -229,9 +229,7 @@ def path_3(username):                                                           
             print("That's not the correct answer. Try again.")                          # Print an error message
             time.sleep(global_delay)                                                    # Delays the next line of code by the global delay variable                      
 
-    print(congratulations_message)                                                      # Print a success message
-
-   
+    print(congratulations_message)                                                      # Print a success message   
 
 if __name__ == "__main__":                          # If the program is run directly
     main()                                          # Call the main function
