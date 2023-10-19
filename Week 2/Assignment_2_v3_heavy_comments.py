@@ -1,4 +1,3 @@
-# **********************Second  draft******************
 # In keeping with the season, I decided to make a Halloween-themed text adventure game.
 # The game is a simple, linear story with three paths to choose from.
 # Each path has a series of puzzles to solve before the player can proceed to the next challenge.
