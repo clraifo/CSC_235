@@ -27,7 +27,7 @@ def generate_haiku(theme, api_key):
     endpoint = "https://api.openai.com/v1/engines/davinci/completions"
     
     # Craft the prompt for the Haiku
-    prompt_text = f"Write a haiku about {theme}:"
+    prompt_text = f"Write a haiku about {theme}. The first line should have 5 syllables, the second line 7 syllables, and the third line 5 syllables.:"
     
     # Define the headers and payload for the API request
     headers = {
@@ -51,7 +51,7 @@ def generate_haiku(theme, api_key):
 def on_generate():
     theme = theme_entry.get()
     try:
-        haiku = generate_haiku(theme, "YOUR_OPENAI_API_KEY")
+        haiku = generate_haiku(theme, "API_KEY_GOES_HERE")
         haiku_display.config(text=haiku)
     except requests.ConnectionError:
         haiku_display.config(text="Error connecting to the API. Check your internet connection.")
@@ -82,5 +82,3 @@ haiku_display.pack(pady=10)
 
 # Start the application's main loop
 root.mainloop()
-# Note: This function will not run here without a valid API key and internet access.
-# You can use this function in your local environment with your API key to generate haikus.
