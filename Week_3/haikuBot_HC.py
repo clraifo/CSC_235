@@ -70,7 +70,7 @@ def generate_haiku(theme, api_key):     # theme is the input, api_key is the key
 def on_generate():
     theme = theme_entry.get()               # Get the theme from the text entry
     try:
-        haiku = generate_haiku(theme, "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")        # Call the function to generate the haiku
+        haiku = generate_haiku(theme, "PUT AN API KEY FOR OPENAI HERE")        # Call the function to generate the haiku
         haiku_display.config(text=haiku)                                                            # Display the generated haiku
     except requests.ConnectionError:                                                                # Catch connection errors
         haiku_display.config(text="Error connecting to the API. Check your internet connection.")   # Display an error message
