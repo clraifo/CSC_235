@@ -22,9 +22,10 @@ def read_blocks_from_file(filename):                    # creates the function a
     try:                                                # try block to catch errors
         with open(filename, 'r') as file:               # opens the file in read mode
             data = file.read()                          # reads the file and stores it in the data variable
-            blocks = data.split(',')[:-1]               # Exclude the last empty string after the final comma
+            blocks = data.split(',')[:-1]               # splits the string at each comma and slices off the last empty string after the final comma
             for i, block in enumerate(blocks):          # loops through the blocks and uses the enumerate() function to get the index
-                end_char = '   ' if i % 10 == 4 else ' '  # Three spaces between blocks 5 and 6, otherwise one space
+                end_char = '   ' if i % 10 == 4 else ' '  # checks for mod 4 (5th block in a line) and inserts three spaces
+                                                          # inserts one space after all others
                 print(block + end_char, end='')         # Print blocks with the specified end character
                 if (i + 1) % 10 == 0:                   # Every ten blocks, start a new line
                     print()                             # Newline after every ten blocks
