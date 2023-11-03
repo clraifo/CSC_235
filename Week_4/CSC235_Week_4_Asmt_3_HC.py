@@ -34,7 +34,10 @@ def read_blocks_from_file(filename):                    # creates the function a
     except Exception as e:                              # exception handling for other errors
         print(f"An error occurred: {e}")                # prints an unhelpful error message
 
-num_blocks = 10000                          # Number of blocks to generate
+num_blocks = random.randint(5000, 15000)                # generate random number of blocks between 5k-15k
+                                                        # I originally hard coded this at 10k but adding the randomness
+                                                        # is pretty low cost and more interesting
+                                                        # I thought it would take WAY more than this one line, yay python!
 
 filename = "random_blocks.txt"              # Filename to write to and read from
 
