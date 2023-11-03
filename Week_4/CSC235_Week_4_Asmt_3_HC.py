@@ -29,6 +29,8 @@ def read_blocks_from_file(filename):                    # creates the function a
                 print(block + end_char, end='')         # Print blocks with the specified end character
                 if (i + 1) % 10 == 0:                   # Every ten blocks, start a new line
                     print()                             # Newline after every ten blocks
+        print(f"\nTotal number of blocks created: {len(blocks)}")   # prints the total number of blocks created
+                                                                    # just for fun to pull it fom line 25
     except FileNotFoundError:                           # exception handling for file not found
         print(f"The file {filename} was not found.")    # prints the error message
     except Exception as e:                              # exception handling for other errors
