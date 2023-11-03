@@ -28,7 +28,8 @@ def read_blocks_from_file(filename):
                 end_char = '   ' if i % 10 == 4 else ' '  
                 print(block + end_char, end='')         
                 if (i + 1) % 10 == 0:                   
-                    print()                             
+                    print()            
+        print(f"\nTotal number of blocks created: {len(blocks)}")   # prints the total number of blocks created
     except FileNotFoundError:                           
         print(f"The file {filename} was not found.")    
     except Exception as e:                              
